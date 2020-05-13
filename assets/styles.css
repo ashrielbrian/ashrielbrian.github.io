@@ -20,6 +20,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 img {
     width: auto;
     height: auto;
@@ -99,7 +103,7 @@ a.main-links {
     text-align: justify;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
     p {
         font-size: 0.85rem;
     }
