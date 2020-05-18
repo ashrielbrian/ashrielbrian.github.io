@@ -99,6 +99,10 @@ a.main-links {
     justify-content: space-evenly;
 }
 
+.header-container {
+    margin-bottom: 20px;
+}
+
 .text-content {
     text-align: justify;
 }

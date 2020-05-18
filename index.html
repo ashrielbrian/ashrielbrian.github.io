@@ -29,7 +29,9 @@
         <h2>My recent work:</h2>
 
         <div class="content-container">
-            <h3>1. <u>Abelytics.io</u></h3>
+            <div class="header-container">
+                <h3>1. <u>Abelytics.io</u></h3>
+            </div>
             <div class="container text-content px-5">
                 <p>
                     Abelytics is a platform for teachers to gather data from students, visualise and export the resulting analyses, and send personalised homework to students.
@@ -66,6 +68,35 @@
                 <img src="assets/images/abelytics-4.gif" alt="animated">
             </div>
 
+        </div>
+
+        <div class="content-container">
+            <div class="header-container">
+                <h3>2. <u>Scheduling web-app for tuition centres</u></h3>
+            </div>
+            <div class="container text-content px-5">
+                <p>
+                    An in-house scheduling web-app for a chain of tuition centres, this was built with a PEAN stack - 
+                    <code>Postgres</code>, <code>Express.js</code>, <code>Angular 6</code>, <code>Node.js</code> -
+                    and hosted on AWS EC2. 
+                </p>
+
+                <p>
+                    This solution addressed many of the shortcomings of current scheduling applications in the education industry,
+                    namely that they were bloated, and built monolithically to contain many features that might be an overkill for
+                    centres. As such, the one built here focused on a specific use-case of scheduling centre assets, i.e. teacher
+                    availability with respect to centre availability.
+                </p>
+                <p>
+                    On a technical level, I employed reactive forms and <a href="https://github.com/valor-software/ng2-dragula">dragula</a> for
+                    user interactivity. State management was done via <code>rxjs</code>'s <code>Subscription</code>, <code>Subject</code> and 
+                    <code>BehaviourSubject</code>, following a <code>facade-state-api</code> pattern.
+                </p>
+            </div>
+            <div class="media-container">
+                <h5 class="caption"><u>Rearranging teacher slots</u></h5>
+                <img src="assets/images/abel-works-1a.gif" alt="animated">
+            </div>
         </div>
         
 
