@@ -60,9 +60,9 @@ jobs:
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
           #
           # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
+          # static_site_generator: next
           # see this issue: https://github.com/actions/configure-pages/issues/107
-          generator_config_file: ./next.config.mjs
+          # generator_config_file: ./next.config.mjs
       - name: Restore cache
         uses: actions/cache@v4
         with:
