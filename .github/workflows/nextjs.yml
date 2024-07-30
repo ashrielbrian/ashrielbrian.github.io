@@ -61,6 +61,8 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+          # see this issue: https://github.com/actions/configure-pages/issues/107
+          generator_config_file: ./next.config.mjs
       - name: Restore cache
         uses: actions/cache@v4
         with:
