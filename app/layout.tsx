@@ -30,7 +30,7 @@ export default function RootLayout({
         <Navbar />
         <div className="flex justify-center items-center bg-white p-24 md:px-16 sm:px-12 max-sm:px-8">
           <div
-            className={`${spectral.className} h-screen prose max-sm:prose-sm`}
+            className={`${spectral.className} h-screen prose lg:prose-lg max-sm:prose-sm`}
           >
             {children}
           </div>
