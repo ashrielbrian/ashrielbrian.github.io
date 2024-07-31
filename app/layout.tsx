@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fira_Mono } from "next/font/google";
+import { Fira_Mono, Spectral } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 
@@ -8,10 +8,15 @@ const firamono = Fira_Mono({
   weight: ["400", "500", "700"],
 });
 
+const spectral = Spectral({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Brian Tang",
   description:
-    "Software engineer - Machine Learning Operations and Data Platform & Engineering",
+    "Senior Software Engineer - Machine Learning Operations and Data Platform & Engineering",
 };
 
 export default function RootLayout({
@@ -23,8 +28,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={firamono.className}>
         <Navbar />
-        <div className="flex justify-center items-center bg-white p-24">
-          <div className="h-screen prose">{children}</div>
+        <div className="flex justify-center items-center bg-white p-24 md:px-16 sm:px-12 max-sm:px-8">
+          <div
+            className={`${spectral.className} h-screen prose max-sm:prose-sm`}
+          >
+            {children}
+          </div>
         </div>
       </body>
     </html>
