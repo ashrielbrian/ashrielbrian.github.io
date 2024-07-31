@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        spectral: ["var(--font-spectral)"],
+      // fontFamily: {
+      //   "fira-mono": ["var(--font-fira-mono", "monospace"],
+      //   spectral: ["var(--font-spectral)", "serif"],
+      // },
+      typography: {
+        DEFAULT: {
+          css: {
+            "h1,h2,h3,h4,h5,h6": {
+              "font-family": "font-spectral",
+            },
+          },
+        },
       },
     },
   },
