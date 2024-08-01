@@ -13,6 +13,7 @@ const spectral = Spectral({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-spectral",
+  display: "auto",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${firamono.className}`}>
+      <body className={`${firamono.className} ${spectral.variable}`}>
         <Navbar />
         <div className="flex justify-center items-center bg-white p-24 md:px-16 sm:px-12 max-sm:px-8">
           <div className={`h-screen prose lg:prose-lg max-sm:prose-sm`}>
